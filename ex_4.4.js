@@ -224,6 +224,20 @@ console.log(result);
 // verificaFimPalavra('joaofernando', 'fernan') ;
 // Retorno esperado: false
 
+let word = 'trybe';
+let ending = 'bffe';
+let ver = false;
+
+function compare(word, ending) {
+    if(word.substr(word.length - ending.length) === ending) {
+        ver = true
+    }
+}
+
+compare(word, ending)
+
+console.log(ver)
+
 // Bônus
 // 1 - (Difícil) Faça um programa que receba uma string em algarismos romanos e retorne o número que a string representa.
 // Atenção! Esse exercício já apareceu no processo seletivo de uma grande multinacional!
@@ -278,3 +292,4 @@ console.log(result);
 //   'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
 //   'Banana', 'Pera', 'Abacate', 'Uva',
 // ];
+
